@@ -1,0 +1,113 @@
+/* Tổng thể */
+.users-container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Lỗi */
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Form thêm user */
+.add-user {
+  background: #f8f8f8;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-user input {
+  width: 90%;
+  max-width: 300px;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-user button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.add-user button:hover {
+  background-color: #0056b3;
+}
+
+/* Bảng user */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.users-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Nút thao tác */
+.users-table button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.users-table button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.users-table button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.users-table button:last-child {
+  background-color: red;
+  color: white;
+}
+
+.users-table button:last-child:hover {
+  background-color: darkred;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .users-table th,
+  .users-table td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .add-user input {
+    width: 100%;
+  }
+
+  .add-user button {
+    width: 100%;
+  }
+}
